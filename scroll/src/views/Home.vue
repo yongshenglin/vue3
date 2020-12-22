@@ -55,6 +55,9 @@ export default {
     //   this.$refs.home.scrollTop += 1
     // },100)
   },
+  beforeDestroy(){
+    clearInterval(this.time)
+  }
 };
 </script>
 
